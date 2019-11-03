@@ -1,0 +1,64 @@
+$main-color: #5cb85c;
+$border-radius: 255px 25px 225px 25px/25px 225px 25px 255px !default;
+
+.custom-button {
+  min-width: 50px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 15px 0 15px;
+  background-color: $main-color;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: 2px solid mintcream;
+  border-radius: $border-radius;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color: white;
+    color:  $main-color;
+    border: 2px solid  white;
+  }
+
+  &.google-sign-in {
+    background-color: #4285f4;
+    color:  white;
+    
+    &:hover {
+      background-color:  #357ae8;
+      border: none;
+    }
+  }
+
+  &.inverted {
+    background-color: $main-color;
+    color:  white;
+    border: 3px solid slategrey;
+    
+    &:hover {
+      background-color: forestgreen;
+      color: white;
+      border: 3px solid white;
+    }
+  }
+  
+  &.add-to-cart {
+    background-color: black;
+    color:  white;
+    border: 3px solid slategrey;
+    position: absolute;
+    bottom: 5px;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 3px solid white;
+    }
+  }
+}
+  

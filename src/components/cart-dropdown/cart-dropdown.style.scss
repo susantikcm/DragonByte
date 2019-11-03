@@ -1,0 +1,44 @@
+$main-color: #5cb85c;
+$border-radius: 255px 25px 225px 25px/25px 225px 25px 255px !default;
+
+.cart-dropdown {
+    position: absolute;
+    width: 240px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    background-color: lightyellow;
+    color: $main-color;
+    top: 65px;
+    right: 30px;
+    z-index: 5;
+  
+    .cart-items {
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+    }
+  
+    .cart-items::-webkit-scrollbar {
+      width: 18px;
+    }
+    
+    .cart-items::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px $main-color; 
+        border-radius: 10px;
+    }
+    
+    .cart-items::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 20px forestgreen; 
+    }
+
+    button {
+      margin: auto 5px 10px 5px;
+    }
+  }
+  

@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '!Sketchy Times';
+  font-style: normal;
+  font-weight: normal;
+  src: local('sketchytimes'), url('./sketchytimes.woff') format('woff');
+}
+
+.sketchy {
+  font-family: '!Sketchy Times';
+  font-weight: 200;
+}
